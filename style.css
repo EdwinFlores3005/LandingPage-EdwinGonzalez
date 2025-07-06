@@ -1,0 +1,396 @@
+/* Fuentes a utilizar en el proyecto*/
+.roboto-extralight {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-mid-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.source-sans-3-regular {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Estilos por elementos HTML*/
+
+body{
+    margin: 0;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header img{
+    height: 50px;
+}
+
+input{
+    width: 50%;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.2rem;
+    color: gray;
+    outline: none;
+    
+}
+
+input:focus{
+    border:0.25rem solid #a83338;
+    border-radius: 0.5rem;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: rgb(207, 44, 44);
+}
+
+main{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 1rem;
+    
+}
+
+footer li{
+    font-size: 1.25rem;
+}
+
+footer ul, h3{
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+/* Estilos por clases*/
+.header-info{
+    background-color: #4a1619;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    padding: 20px;
+}
+
+.search-bar img, .profile-cart img{
+    width: 25px;
+    filter: invert(99%) sepia(93%) saturate(4%) hue-rotate(248deg) brightness(108%) contrast(100%);
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    
+}
+
+.profile-cart{
+    display: flex;
+}
+
+.header-pr-card{
+    padding: 15px;
+}
+
+.nav-links{
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-links ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.25rem;
+    
+}
+
+.main-banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: thin solid gray;
+    border-radius: 1rem;
+
+}
+
+.main-banner h3{
+    font-size: 2rem;
+    margin: 0;
+    padding: 10px;
+}
+
+.main-banner h4{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 10px;
+}
+
+.main-banner img{
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.categories-container{
+    margin-top: 5rem;
+}
+
+.categories-container-list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.categories-container-list li a{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   font-size: 1.5rem;
+}
+
+.categories-container-list li{
+ transition: 2s;
+}
+
+
+.categories-container-list li:hover{
+ transform: translateY(-30px);
+}
+
+.categories-container img{
+    border-radius: 50%;
+    height: 10rem;
+    
+}
+
+.products-container{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+}
+
+.products-container h2{
+    font-size: 2rem;
+}
+
+.grid-products{
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(250px,1fr));*/
+    grid-template-columns: 33% 33% 33%;
+    margin: 4rem;
+    gap: 1.5rem;
+    width: 80%;
+}
+
+.product-card{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: 2s;
+}
+
+.product-card:hover{
+    transform: translateY(-20px);
+}
+
+.product-card img{
+    height: 15rem;
+    width: auto;
+}
+
+.product-card button{
+    background-color: #d02d37;
+    padding: 0.5rem;
+    color: white;
+    width: 100%;
+    font-size: 1.25rem;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.product-card button:hover{
+    background-color: #bf1b24;
+}
+
+.product-card p, .product-card h3{
+    margin: 0;
+    padding: 0.5rem 0rem;
+    text-align: center;
+}
+
+.brand-p{
+    color: #1f1f1f;
+}
+
+.sold-by-p{
+    color: #7d7d7d;
+    font-size: 0.80rem;
+}
+
+.sold-by-p-lthru{
+    text-decoration: line-through;
+    color: #7d7d7d;
+    font-size: 0.80rem;
+}
+
+
+.new-price{
+    color: #ab3338;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.new-price h5{
+  margin: 0;
+}
+
+.details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 1rem;
+}
+
+.detail-card{
+    display: flex;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.detail-text{
+    padding-left: 1rem;
+}
+
+.contact-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer img{
+    width: 16rem;
+}
+
+.f-social-media img{
+    width: 2rem;
+    padding: 1rem;
+}
+
+.input-footer{
+    width: 50%;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.contact-footer button{
+    background-color: #d02d37;
+    padding: 0.5rem;
+    color: white;
+    width: 40%;
+    font-size: 1.25rem;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 0;
+}
+
+
+.contact-footer button:hover{
+    background-color: #bf1b24;
+}
