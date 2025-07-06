@@ -142,6 +142,8 @@ ul{
 
 
 /* Estilos por clases*/
+
+/*HEADER*/
 .header-info{
     background-color: #4a1619;
     display: flex;
@@ -188,6 +190,8 @@ ul{
     font-size: 1.25rem;
     
 }
+
+/*MAIN CSS*/
 
 .main-banner{
     display: flex;
@@ -359,6 +363,8 @@ ul{
     padding-left: 1rem;
 }
 
+/*FOOTER*/
+
 .contact-footer{
     display: flex;
     flex-direction: column;
@@ -394,3 +400,60 @@ ul{
 .contact-footer button:hover{
     background-color: #bf1b24;
 }
+
+
+/*
+MEDIA QUERIES*/
+
+@media (max-width:480px){
+
+    .nav-links ul{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 3rem;
+    }
+
+    header img{
+        height: 1.5rem;
+    }
+
+    .main-banner{
+        display: none;
+    }
+
+    .categories-container-list{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .grid-products{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .details-container img{
+        width: 6rem;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
+/*
+Now let’s see some common breakpoints for widths of devices:
+
+    320px — 480px: Mobile devices DONE
+    481px — 768px: iPads, Tablets
+    769px — 1024px: Small screens, laptops
+    1025px — 1200px: Desktops, large screens
+    1201px and more —  Extra large screens, TV
+*/
