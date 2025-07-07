@@ -1,0 +1,169 @@
+/* Fuentes a utilizar en el proyecto*/
+.roboto-extralight {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+.source-sans-3-thin {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.source-sans-3-regular {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*Estilo por elementos HTMl*/
+body{
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 10rem 10rem 5rem 10rem;
+    height: 75%;
+}
+
+h1{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h2{
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.80rem;
+}
+
+hr{
+    width: 75%;
+    border-top: thin solid #dee2e6 ;
+}
+/*Estilos por clases*/
+
+.logo-siman{
+    padding: 3rem;
+}
+
+.country-section{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.countries-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+}
+
+.country-info{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    transition: 1.5s;
+}
+
+.country-info:hover{
+    transform: translateY(-20px);
+}
+
+/*MEDIA QUERIES*/
+@media (max-width:480px){
+
+    main{
+        padding: 4rem;
+    }
+    .logo-siman{
+        padding: 1rem;
+    }
+
+    .logo-siman img{
+        width: 12rem;
+    }
+}
+
+@media (max-width:768px) and (min-width:481px){
+    main{
+        padding: 4rem;
+    }
+    .logo-siman{
+        padding: 1rem;
+    }
+
+    .logo-siman img{
+        width: 24rem;
+    }
+
+    .countries-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+@media (max-width:1024px) and (min-width:769px){
+    main{
+        padding: 4rem;
+    }
+    .logo-siman{
+        padding: 1rem;
+    }
+
+    .logo-siman img{
+        width: 24rem;
+    }
+
+    .countries-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    }
+}
