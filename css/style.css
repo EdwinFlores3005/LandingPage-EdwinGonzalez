@@ -404,6 +404,48 @@ ul{
 }
 
 
+
+/*LOGIN*/
+
+    .login{
+        display: flex;
+        justify-content: center;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 50%;
+        gap: 1rem;
+    }
+
+    form button{
+    background-color: #d02d37;
+    padding: 0.5rem;
+    color: white;
+    width: 50%;
+    font-size: 1.25rem;
+    border-radius: 16px;
+    cursor: pointer;
+    border: none;
+    }
+
+    form button:hover{
+    background-color: #bf1b24;
+    }
+
+    form h4{
+        font-size: 0.8rem;
+        color: #d02d37;
+    }
+
+    form h4:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
 /*
 MEDIA QUERIES*/
 
